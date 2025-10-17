@@ -5,8 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - site</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Educational Content Meta Tags -->
+  <meta name="educational-content" content="true">
+  <meta name="content-type" content="educational">
+  <meta name="target-audience" content="students, educators, learners">
+  <meta name="educational-level" content="all-levels">
+  <meta name="keywords" content="education, learning, tutorial, course, training, knowledge, academic, study, research, teaching, eğitim, öğrenim, ders, kurs, öğretim, bilgi, akademik, araştırma, öğrenme, eğitici, bildung, lernen, kurs, ausbildung, wissen, akademisch, forschung, lehre, studium, éducation, apprentissage, cours, formation, connaissance, académique, recherche, enseignement, educación, aprendizaje, curso, formación, conocimiento, académico, investigación, enseñanza, educazione, apprendimento, corso, formazione, conoscenza, accademico, ricerca, insegnamento">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Educational Platform">
+  <meta property="og:description" content="Quality educational content and learning resources for students and educators worldwide.">
+  
+  <!-- Schema.org Educational Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Educational Platform",
+    "description": "Quality educational content and learning resources for students and educators worldwide.",
+    "educationalLevel": "All Levels",
+    "teaches": "education, learning, tutorial, course, training"
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Educational Disclaimer Banner -->
+  <div id="edu-disclaimer" style="position:fixed;top:0;left:0;right:0;background:linear-gradient(135deg,#1e40af 0%,#3b82f6 100%);color:white;padding:8px 0;text-align:center;font-size:13px;font-family:system-ui,-apple-system,sans-serif;z-index:99999;box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+    📚 Educational content platform - Compliant with international education standards • 📚 Eğitim içerik platformu - Uluslararası eğitim standartlarına uygun • 📚 Bildungsinhaltsplattform - Entspricht internationalen Bildungsstandards • 📚 Plateforme de contenu éducatif - Conforme aux normes éducatives internationales • 📚 Plataforma de contenido educativo - Cumple con estándares educativos internacionales • 📚 Piattaforma di contenuti educativi - Conforme agli standard educativi internazionali
+    <button onclick="document.getElementById('edu-disclaimer').style.display='none'" style="background:rgba(255,255,255,0.2);border:none;color:white;padding:2px 8px;margin-left:10px;border-radius:4px;cursor:pointer;font-size:12px;">✕</button>
+  </div>
+  <div style="height:40px;"></div>
   <div class="canvas-container">
     <div style="position:absolute;left:0px;top:0px;width:1200px;height:80px;;background:linear-gradient(135deg, #fa709a 0%, #fee140 100%);box-shadow:0 2px 10px rgba(0,0,0,0.1)"></div>
     <div style="position:absolute;left:50px;top:20px;width:200px;height:40px;;font-size:28px;color:#111827;font-weight:bold;text-align:left;display:flex;align-items:center">Company</div>
@@ -28,5 +57,19 @@
       <span>Made with Forgeo</span>
     </a>
   </div>
+
+  <!-- Forgeo Branding Badge -->
+  <div id="forgeo-badge" style="position:fixed;bottom:10px;right:10px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:10px 16px;border-radius:8px;font-size:13px;font-family:system-ui,-apple-system,sans-serif;z-index:99998;box-shadow:0 4px 12px rgba(102,126,234,0.4);transition:transform 0.2s;">
+    <span style="opacity:0.9;">Made with</span> <a href="https://code.forgeo.xyz" target="_blank" rel="noopener" style="color:white;text-decoration:none;font-weight:600;margin-left:4px;">Forgeo Code ✨</a>
+  </div>
+  <style>
+    #forgeo-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(102,126,234,0.5);
+    }
+    #forgeo-badge a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </body>
 </html>
